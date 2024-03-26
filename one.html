@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width: 800px;
+            height: 500px;
+            background: skyblue;
+            display: flex;
+            margin: 100px auto;
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* flex-wrap: nowrap; */
+           justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+        }
+        .wrap div{
+            width: 100px;
+            height: 100px;
+            background: aqua;
+            border: 2px solid yellow; 
+            /* flex-flow: nowrap; */
+            flex-shrink: 1;
+        }
+        .wrap div:nth-child(2){
+            align-self: center;
+            align-self: flex-end;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+    </div>
+</body>
+</html>
